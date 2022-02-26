@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Droppable - Default functionality</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <style>
+.container {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.title  {
+    background-color: rgb(184, 185, 187);
+    text-align: left;
+    display: block;
+    font-size: 200%;
+    font-weight: bold;
+    padding: 50px 0px 50px 20px
+}
+.menu {
+    background-color: rgb(128, 154, 206);
+    text-align: center;
+    display: block;
+    font-size: 100%;
+    font-weight: normal;
+    padding: 20px 0px 20px 20px
+}
+.text {
+    color:black;
+    font-weight: bold
+}
+.text2 {
+    color:black;
+    font-weight: normal;
+    font-size: 25%;
+    color: rgb(122, 121, 121)
+}
+.no-gutters2 {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0%;
+    padding-left: 0;
+    padding-top: 2%;
+}
+.block2  {
+          width: 100%;
+          display: block;
+          text-align: center;
+      }
+#droppable_list1 {
+          border: 2px solid rgb(120, 140, 228);
+          background-color: rgb(120, 140, 228);
+          border-radius: 0px;
+          padding: 7% 50% 7% 7%;
+          font-weight: bold;
+      }
+.draggable {
+          border: 1px solid black;
+          background-color: white;
+          border-radius: 0px;
+          text-align:start;
+          z-index:9999;
+}
+.draggable2 {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0px;
+    text-align:start;
+    cursor:move;
+}
+.draggable2:hover {
+    background-color: lightyellow;
+  }
+#droppable_list2 {                
+          border: 2px solid rgb(120, 140, 228);
+          background-color: rgb(120, 140, 228);
+          border-radius: 0px;
+          padding: 7% 50% 7% 7%;
+          font-weight: bold;
+        }
+.darker {
+        background-color: rgb(91, 113, 212);
+}
+.darkest {
+    background-color: rgb(7, 46, 221);
+}
+.ui-draggable-dragging {
+            z-index:99999;
+        }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+        <div>Sai Satwik Vaddi</div>
+        <div class="text2">Welcome to my Personal Page. I try to keep the page updated.</div>
+        <div class="text2">Thanks for showing up and Happy Reading!! </div>
+        <!--<div class="text2">()</div>-->
+    </div>
+    <div class="menu">
+    <div class="row">
+        <div class="col-md-2 col-sm-2">
+            <a href="https://satwik290896.github.io/Introduction" class="text">Introduction</a>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <a href="https://satwik290896.github.io/Education/" class="text">Education</a>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            <a href="https://satwik290896.github.io/ProfessionalExperience" class="text">Professional-Experience</a>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <a href="https://satwik290896.github.io/Projects" class="text">Projects</a>
+        </div>
+        <div class="col-md-1 col-sm-2">
+            <a href="https://satwik290896.github.io/Research" class="text">Research</a>
+        </div>       
+        <div class="col-md-2 col-sm-1">
+            <a href="https://satwik290896.github.io/Entrepreneurial" class="text">Entrepreneurial</a>
+        </div>  
+        <!--<div class="col-md-1">
+        </div> -->          
+    </div>
+    </div>
+    <br/>
+    <ul style="list-style-type:square">
+    <li>
+        <h3>Explorer On Roll</h3>
+        <h5>3D Virtual Game Design</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Designed a 3D game using Neilson's Heuristics and Unity3D</li>
+            <li>Implemented the design with over 5000 lines of code(28 files) written in C#. Used Free Animations for real-time Experience</li>
+            <li>Got appeciated from Prof. Steven Fiener and achieved Full Credit. </li>
+            <li> <a href="https://youtu.be/U_c7eTyjilE">Check the Youtube Link</a>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>2021 BlockChain Defense Summer Challenge</h3>
+        <h5> Creative Head; Research Dev. - (2017-2018) </h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Researched various kinds of security threats/vulnerabilities in the DeFi Blockchain Network 
+                Applications. Studied and scrutinized Ethereum's open source code written in Golang and Solidity 
+                languages. Project secured a spot among Top3 and got awarded $1000 worth of CryptoCurrency. </li>
+            <li>Simulated False Friends Eclipse Attack. Analyzed, Devised and Presented a new AI Call-flow/Algorithm productively mitigating and reducing vulnerabilities and impacts of Eclipse Attacks in the BlockChain Smart Contract Applications.</li>
+            <li>Managed and Conducted scrum meetings to discuss about advancements throughout the Challenge.</li>
+            <li><a href="https://entrepreneurship.engineering.columbia.edu/seas-design-challenges/2021-blockchain-design-challenge/">Check Out Competetion URL</a></li>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>Twitter, IMDB, Indian Constitution Web Design</h3>
+        <h5>UI/UX Designer</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>With BootStrap implementation, Built multiple websites ranging from Twitter, IMDB to Indian Constitution using Flask, JQuery, HTML, CSS</li>
+            <li>Planning to release "Indian Constitution Web page" to the public so that-Users can find the releavant information with just One Click</li>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>Reinforcement Learning, DL Projects</h3>
+        <h5>Course Projects</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Implemented various papers related to RL agents in Python like Rmax, Q-learning, Double Q Neural Networks, Q-NN</li>
+            <li>Implemented couple of Deep learning Research papers pertaing to "Training with Database Querying Architecture" and "NLP"</li>
+            <li>Some of the things are made Open Source in my GitHub. Check out my Github page</li>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>Robotics Coursework</h3>
+        <h5>Course Projects</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Implemented Bug-1, Bug-2, Tangent Bug Algorithms in Python</li>
+            <li>Implemented and scruitinized the performance of EKM-SLAM and Probability Methods in detecting the location og Robot Accurately.</li>
+        </ul>
+    </li>
+    <br/>
+    <li>
+        <h3>Activity Recorder</h3>
+        <h5>Mobile Application</h5>
+        <div>Achievements:</div>
+        <ul style="list-style-type:square">
+            <li>Through Application, we can manually record the Event/Activity and Tick the Box once it is completed. We can as well delete the event/activity which was added before.</li>
+            <li><a href="https://github.com/Satwik290896/Activity_Recorder_Mobile_Application">Check Out the Project<a></li>
+        </ul>
+    </li>
+    </ul>
+    <br/>
+    <br/>
+</body>
+</html>
